@@ -1,4 +1,4 @@
-import { addition , subtraction} from "../src/expression_calculator"
+import { addition , subtraction , multiplication} from "../src/expression_calculator"
 describe("Basic Operations",()=>{
 
     test("addition of 2 numbers",()=>{
