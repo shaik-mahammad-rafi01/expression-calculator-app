@@ -1,0 +1,32 @@
+{
+  "name": "expression-calculator-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaik-mahammad-rafi01/expression-calculator-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaik-mahammad-rafi01/expression-calculator-app/issues"
+  },
+  "homepage": "https://github.com/shaik-mahammad-rafi01/expression-calculator-app#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "mathjs": "^14.6.0"
+  }
+}
