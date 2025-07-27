@@ -1,4 +1,4 @@
-
+import { factorial } from "../src/expression_calculator"
 import { squareroot } from "../src/expression_calculator"
 import { addition, subtraction, multiplication, division, modulus, powercalculation } from "../src/expression_calculator"
 describe("Basic Operations", () => {
@@ -61,6 +61,10 @@ describe("scientific operaions",()=>{
 
     test("show error when calculate negative sqrt",()=>{
         expect(()=>squareroot(-12)).toThrow("number must be positive")
+    })
+
+    test("factorial of a number",()=>{
+        expect(factorial(5)).toBe(120)
     })
 })
 
