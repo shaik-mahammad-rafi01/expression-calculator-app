@@ -85,4 +85,7 @@ describe("Expression evaluator test cases",()=>{
     test("addiion of numbers",()=>{
         expect(mathExpressionCalculator('2+3')).toBe(5)
     })
+    test("expression with paranthesis",()=>{
+        expect(mathExpressionCalculator("10 + (2*4)")).toBe(18)
+    })
 })
