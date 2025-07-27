@@ -93,4 +93,8 @@ describe("Expression evaluator test cases",()=>{
         expect(()=>mathExpressionCalculator("2+*3")).toThrow("Invalid input");
         
     })
+
+    test("should throw error for invalid expression",()=>{
+        expect(()=>mathExpressionCalculator("rafi shaik")).toThrow("Invalid input")
+    })
 })
