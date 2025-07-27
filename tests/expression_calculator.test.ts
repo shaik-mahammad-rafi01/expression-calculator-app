@@ -18,5 +18,8 @@ describe("Basic Operations",()=>{
     test("Modulus",()=>{
         expect(modulus(5,2)).toBe(1);
     })
+    test("power calculation",()=>{
+        expect(powercalculation(2,2)).toBe(4)
+    })
 })
 
