@@ -1,4 +1,4 @@
-import { re } from "mathjs"
+import { add, re } from "mathjs"
 import { addition, subtraction, multiplication, division, modulus, powercalculation } from "../src/expression_calculator"
 describe("Basic Operations", () => {
 
@@ -12,7 +12,9 @@ describe("Basic Operations", () => {
     test("Add 2 negative numbers",()=>{
         expect(addition(-2,-4)).toBe(-6)
     })
-
+    test("add decimal numbers",()=>{
+        expect(addition(2.1,3.2)).toBeCloseTo(5.3)
+    })
     test("subraction of 2 numbers", () => {
         expect(subtraction(3, 1)).toBe(2)
     })
