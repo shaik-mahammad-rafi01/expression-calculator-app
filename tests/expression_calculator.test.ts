@@ -1,3 +1,4 @@
+import { re } from "mathjs"
 import { addition , subtraction , multiplication , division} from "../src/expression_calculator"
 describe("Basic Operations",()=>{
 
@@ -13,6 +14,9 @@ describe("Basic Operations",()=>{
 
     test("Division of 2 numbers",()=>{
         expect(division(4,2)).toBe(2)
+    })
+    test("Modulus",()=>{
+        expect(modulus(5,2)).toBe(1);
     })
 })
 
