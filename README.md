@@ -23,6 +23,9 @@ This is a simple calculator built with Typescript that evaluates mathematical ex
 - Scientific Operations
     - Square Root(sqrt)
     - Factorial(!)
+- Expression Evaluation
+    - Evaluate math expression from string
+    - Handle invalid input with clear error message
 ### Tech Stack
 
 - TypeScript download and installation guide - visit : https://www.typescriptlang.org/download/
