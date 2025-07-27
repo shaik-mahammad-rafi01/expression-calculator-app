@@ -10,3 +10,6 @@ export function multiplication(x:number,y:number):number{
 export function division(x:number,y:number):number{
     return x/y;
 }
+export function modulus(x:number,y:number):number{
+    return x % y;
+}
