@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "node dist/src/app.js",
     "dev": "tsc",
     "test": "jest"
   },
@@ -22,11 +22,13 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
+    "@types/prompt-sync": "^4.2.3",
     "jest": "^30.0.5",
     "ts-jest": "^29.4.0",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "mathjs": "^14.6.0"
+    "mathjs": "^14.6.0",
+    "prompt-sync": "^4.2.0"
   }
 }
