@@ -9,6 +9,9 @@ describe("Basic Operations", () => {
     test("add a positive and a negative number",()=>{
         expect(addition(5, -2)).toBe(3);
     });
+    test("Add 2 negative numbers",()=>{
+        expect(addition(-2,-4)).toBe(-6)
+    })
 
     test("subraction of 2 numbers", () => {
         expect(subtraction(3, 1)).toBe(2)
