@@ -88,4 +88,9 @@ describe("Expression evaluator test cases",()=>{
     test("expression with paranthesis",()=>{
         expect(mathExpressionCalculator("10 + (2*4)")).toBe(18)
     })
+
+    test("should throw an error for invalid syntax",()=>{
+        expect(()=>mathExpressionCalculator("2+*3")).toThrow("Invalid input");
+        
+    })
 })
