@@ -1,4 +1,5 @@
-import { add, re } from "mathjs"
+import { factorial } from "../src/expression_calculator"
+import { squareroot } from "../src/expression_calculator"
 import { addition, subtraction, multiplication, division, modulus, powercalculation } from "../src/expression_calculator"
 describe("Basic Operations", () => {
 
@@ -46,6 +47,35 @@ describe("Basic Operations", () => {
     })
     test("power calculation", () => {
         expect(powercalculation(2, 2)).toBe(4)
+    })
+})
+
+describe("scientific operaions",()=>{
+    test('square root of a number',() =>{
+    expect(squareroot(4)).toBe(2);
+    });
+
+    test("square root of 0 is 0",()=>{
+        expect(squareroot(0)).toBe(0)
+    })
+
+    test("show error when calculate negative sqrt",()=>{
+        expect(()=>squareroot(-12)).toThrow("number must be positive")
+    })
+
+    test("factorial of a number",()=>{
+        expect(factorial(5)).toBe(120)
+    })
+
+    test("factorial of 0 should be 1",()=>{
+        expect(factorial(0)).toBe(1)
+    })
+
+    test("factorial of 1 should be 1",()=>{
+        expect(factorial(1)).toBe(1)
+    })
+    test("throws error when number is negative",()=>{
+        expect(()=>factorial(-2)).toThrow("Number must be positive")
     })
 })
 
