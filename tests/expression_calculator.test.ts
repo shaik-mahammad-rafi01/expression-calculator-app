@@ -10,5 +10,9 @@ describe("Basic Operations",()=>{
     test("Multiplication of 2 numbers",()=>{
         expect(multiplication(2,3)).toBe(6)
     })
+
+    test("Division of 2 numbers",()=>{
+        expect(division(4,2)).toBe(2)
+    })
 })
 
