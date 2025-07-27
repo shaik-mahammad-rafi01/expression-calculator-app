@@ -18,6 +18,9 @@ describe("Basic Operations", () => {
     test("add zero and number",()=>{
         expect(addition(0,2)).toBe(2)
     })
+    test("add number and zero",()=>{
+        expect(addition(2,0)).toBe(2)
+    })
     test("subraction of 2 numbers", () => {
         expect(subtraction(3, 1)).toBe(2)
     })
