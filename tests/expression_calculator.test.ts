@@ -15,6 +15,9 @@ describe("Basic Operations", () => {
     test("add decimal numbers",()=>{
         expect(addition(2.1,3.2)).toBeCloseTo(5.3)
     })
+    test("add zero and number",()=>{
+        expect(addition(0,2)).toBe(2)
+    })
     test("subraction of 2 numbers", () => {
         expect(subtraction(3, 1)).toBe(2)
     })
