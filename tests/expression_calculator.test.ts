@@ -70,5 +70,9 @@ describe("scientific operaions",()=>{
     test("factorial of 0 should be 1",()=>{
         expect(factorial(0)).toBe(1)
     })
+
+    test("factorial of 1 should be 1",()=>{
+        expect(factorial(1)).toBe(1)
+    })
 })
 
