@@ -53,6 +53,10 @@ describe("Basic Operations", () => {
 describe("scientific operaions",()=>{
     test('square root of a number',() =>{
     expect(squareroot(4)).toBe(2);
-  });
+    });
+
+    test("square root of 0 is 0",()=>{
+        expect(squareroot(0)).toBe(0)
+    })
 })
 
