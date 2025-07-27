@@ -20,6 +20,9 @@ This is a simple calculator built with Typescript that evaluates mathematical ex
     - Division
     - Modulus
     - Power
+- Scientific Operations
+    - Square Root(sqrt)
+    - Factorial(!)
 ### Tech Stack
 
 - TypeScript download and installation guide - visit : https://www.typescriptlang.org/download/
