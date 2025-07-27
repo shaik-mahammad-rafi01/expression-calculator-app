@@ -13,7 +13,13 @@ This is a simple calculator built with Typescript that evaluates mathematical ex
 
 
 ### Features
-
+- Basic Math Operation
+    - Addition
+    - Subtraction
+    - Multiplication
+    - Division
+    - Modulus
+    - Power
 ### Tech Stack
 
 - TypeScript download and installation guide - visit : https://www.typescriptlang.org/download/
