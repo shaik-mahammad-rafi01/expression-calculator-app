@@ -1,3 +1,5 @@
+
+import { squareroot } from "../src/expression_calculator"
 import { addition, subtraction, multiplication, division, modulus, powercalculation } from "../src/expression_calculator"
 describe("Basic Operations", () => {
 
