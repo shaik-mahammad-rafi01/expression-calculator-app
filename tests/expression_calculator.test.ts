@@ -74,5 +74,8 @@ describe("scientific operaions",()=>{
     test("factorial of 1 should be 1",()=>{
         expect(factorial(1)).toBe(1)
     })
+    test("throws error when number is negative",()=>{
+        expect(()=>factorial(-2)).toThrow("Number must be positive")
+    })
 })
 
