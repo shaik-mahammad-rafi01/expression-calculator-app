@@ -79,3 +79,9 @@ describe("scientific operaions",()=>{
     })
 })
 
+describe("Expression evaluator test cases",()=>{
+    
+    test("addiion of numbers",()=>{
+        expect(mathExpressionCalculator("2+4")).toBe(6)
+    })
+})
