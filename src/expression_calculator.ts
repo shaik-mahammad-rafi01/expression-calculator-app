@@ -23,3 +23,13 @@ export function squareroot(n: number): number {
   }
   return Math.sqrt(n);
 }
+
+export function factorial(num:number):number{
+    if(num < 0){
+        throw new Error("Number must be positive")
+    }
+    else if(num === 0 || num ===1 ){
+        return 1;
+    }
+    return num * factorial(num-1)
+}
