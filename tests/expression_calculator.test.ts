@@ -1,4 +1,3 @@
-import { add, re } from "mathjs"
 import { addition, subtraction, multiplication, division, modulus, powercalculation } from "../src/expression_calculator"
 describe("Basic Operations", () => {
 
@@ -47,5 +46,11 @@ describe("Basic Operations", () => {
     test("power calculation", () => {
         expect(powercalculation(2, 2)).toBe(4)
     })
+})
+
+describe("scientific operaions",()=>{
+    test('square root of a number',() =>{
+    expect(squareroot(4)).toBe(2);
+  });
 })
 
