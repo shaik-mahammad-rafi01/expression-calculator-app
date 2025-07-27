@@ -58,5 +58,9 @@ describe("scientific operaions",()=>{
     test("square root of 0 is 0",()=>{
         expect(squareroot(0)).toBe(0)
     })
+
+    test("show error when calculate negative sqrt",()=>{
+        expect(()=>squareroot(-12)).toThrow("number must be positive")
+    })
 })
 
