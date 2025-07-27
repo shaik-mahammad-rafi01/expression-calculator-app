@@ -7,5 +7,8 @@ describe("Basic Operations",()=>{
     test("subraction of 2 numbers",()=>{
         expect(subtraction(3,1)).toBe(2)
     })
+    test("Multiplication of 2 numbers",()=>{
+        expect(multiplication(2,3)).toBe(6)
+    })
 })
 
