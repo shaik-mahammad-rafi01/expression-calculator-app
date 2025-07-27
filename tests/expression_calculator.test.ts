@@ -24,6 +24,9 @@ describe("Basic Operations", () => {
     test("subraction of 2 numbers", () => {
         expect(subtraction(3, 1)).toBe(2)
     })
+    test("subtract big number from small number",()=>{
+        expect(subtraction(2,5)).toBe(-3)
+    })
     test("Multiplication of 2 numbers", () => {
         expect(multiplication(2, 3)).toBe(6)
     })
