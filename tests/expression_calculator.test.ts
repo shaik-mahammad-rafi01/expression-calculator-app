@@ -1,6 +1,7 @@
 import { factorial } from "../src/expression_calculator"
 import { squareroot } from "../src/expression_calculator"
 import { addition, subtraction, multiplication, division, modulus, powercalculation } from "../src/expression_calculator"
+import { mathExpressionCalculator } from "../src/expression_calculator"
 describe("Basic Operations", () => {
 
     test("addition of 2 numbers", () => {
@@ -82,6 +83,6 @@ describe("scientific operaions",()=>{
 describe("Expression evaluator test cases",()=>{
     
     test("addiion of numbers",()=>{
-        expect(mathExpressionCalculator("2+4")).toBe(6)
+        expect(mathExpressionCalculator('2+3')).toBe(5)
     })
 })
