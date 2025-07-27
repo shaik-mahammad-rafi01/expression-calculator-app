@@ -27,6 +27,10 @@ describe("Basic Operations", () => {
     test("subtract big number from small number",()=>{
         expect(subtraction(2,5)).toBe(-3)
     })
+
+    test("subtraction of decimal numbers",()=>{
+        expect(subtraction(5.1,2.1)).toBeCloseTo(3.0)
+    })
     test("Multiplication of 2 numbers", () => {
         expect(multiplication(2, 3)).toBe(6)
     })
