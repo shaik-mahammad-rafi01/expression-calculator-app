@@ -13,3 +13,6 @@ export function division(x:number,y:number):number{
 export function modulus(x:number,y:number):number{
     return x % y;
 }
+export function powercalculation(x:number, y:number):number{
+    return x**y;
+}
