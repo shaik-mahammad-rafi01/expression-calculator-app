@@ -1,22 +1,26 @@
-import { evaluate } from "mathjs";
+import { evaluate} from "mathjs";
 
-export function addition(a: number, b: number) {
-    return a + b
+export function addition(firstNumber: number, secondNumber: number) {
+    return firstNumber + secondNumber
 }
-export function subtraction(x: number, y: number): number {
-    return x - y;
+export function subtraction(firstNumber: number, secondNumber: number): number {
+    return firstNumber - secondNumber;
 }
-export function multiplication(x: number, y: number): number {
-    return x * y;
+export function multiplication(firstNumber: number, secondNumber: number): number {
+    return firstNumber * secondNumber;
 }
-export function division(x: number, y: number): number {
-    return x / y;
+export function division(firstNumber: number, secondNumber: number): number {
+    if(secondNumber === 0 ){
+        throw new Error("can not divide by zero")
+    }
+    return firstNumber / secondNumber;
+    
 }
-export function modulus(x: number, y: number): number {
-    return x % y;
+export function modulus(firstNumber: number, secondNumber: number): number {
+    return firstNumber % secondNumber;
 }
-export function powercalculation(x: number, y: number): number {
-    return x ** y;
+export function powercalculation(firstNumber: number, secondNumber: number): number {
+    return firstNumber ** secondNumber;
 }
 
 export function squareroot(n: number): number {
@@ -39,12 +43,12 @@ export function factorial(num: number): number {
 export function mathExpressionCalculator(expression: string): number {
     try {
         const result = evaluate(expression);
-        if (typeof result !== 'number'){
-            throw new Error("Invalid expression");
-        } 
-        return result;  
 
+        if (typeof result !== 'number') {
+            throw new Error("Invalid expression");
+        }
+        return result;
     } catch (err) {
-        throw new Error("Invalid input");
+        throw new Error("Invalid expression");
     }
 }
