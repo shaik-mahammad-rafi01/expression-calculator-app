@@ -1,5 +1,5 @@
 import promptSync from 'prompt-sync';
-import {addition,subtraction,multiplication,division,modulus,powercalculation,squareroot,factorial,mathExpressionCalculator} from '../src/expression_calculator';
+import {addition,subtraction,multiplication,division,modulus,powercalculation,squareroot,factorial, mathExpressionCalculator} from '../src/expression_calculator';
 
 const prompt = promptSync();
 
@@ -91,8 +91,13 @@ while (true) {
 
     case "9": {
       const expression = prompt("enter a math expression: ");
-      const result= mathExpressionCalculator(expression);
-      console.log("Result:", result);
+      try{
+        const result= mathExpressionCalculator(expression);
+        console.log("Result:", result);
+      }
+      catch(error){
+        console.log("error is",(error as Error).message)
+      }
       break;
     }
   }
