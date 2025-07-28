@@ -1,2 +1,8 @@
 # node modules
 /node_modules
+
+# compiled files
+/dist
+
+# coverage files
+/coverage
