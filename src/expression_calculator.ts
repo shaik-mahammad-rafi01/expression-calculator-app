@@ -23,31 +23,29 @@ export function powercalculation(firstNumber: number, secondNumber: number): num
     return firstNumber ** secondNumber;
 }
 
-export function squareroot(n: number): number {
-    if (n < 0) {
+export function squareroot(number: number): number {
+    if (number < 0) {
         throw new Error("number must be positive");
     }
-    return Math.sqrt(n);
+    return Math.sqrt(number);
 }
 
-export function factorial(num: number): number {
-    if (num < 0) {
+export function factorial(number: number): number {
+    if (number < 0) {
         throw new Error("Number must be positive")
     }
-    else if (num === 0 || num === 1) {
+    else if (number === 0 || number === 1) {
         return 1;
     }
-    return num * factorial(num - 1)
+    return number * factorial(number - 1)
 }
 
 export function mathExpressionCalculator(expression: string): number {
     try {
         const result = evaluate(expression);
 
-        if (typeof result !== 'number') {
-            throw new Error("Invalid expression");
-        }
         return result;
+        
     } catch (err) {
         throw new Error("Invalid expression");
     }

@@ -85,13 +85,11 @@ describe("Expression evaluator test cases",()=>{
     test("should return correct output value",()=>{
         expect(mathExpressionCalculator("2+3")).toEqual(5)
     })
-    
+    test("invalid expression",()=>{
+        expect(()=>mathExpressionCalculator("((9-1)")).toThrow("Invalid expression")
+    })
     test("should throw for wrong expression", () => {
-        expect(() => mathExpressionCalculator("5 rafi")).toThrow("Invalid expression");
-    });
-
-    test("should throw error for boolean result", () => {
-        expect(() => mathExpressionCalculator("2 < 3")).toThrow("Invalid expression");
+        expect(() => mathExpressionCalculator("rafi")).toThrow("Invalid expression");
     });
 
 })

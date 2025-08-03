@@ -96,7 +96,7 @@ while (true) {
         console.log("Result:", result);
       }
       catch(error){
-        console.log("error is",(error as Error).message)
+        console.log("error is : ",(error as Error).message)
       }
       break;
     }
