@@ -1,5 +1,8 @@
 pipeline{
   agent any
+  tools{
+    nodejs('NodeJs 24.5.0') 
+  }
   stages{
     stage('checkout github repository'){
       steps{
