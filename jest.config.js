@@ -7,11 +7,14 @@ module.exports = {
   testEnvironment: "node",
   transform: {
     ...tsJestTransformCfg,
-    collectCoverage : true,
+    collectCoverage: true,
+    collectCoverageFrom: [
+      "src/**/*.{ts}",
+    ],
   },
-  
+
   coverageThreshold: {
-    
+
     global: {
       branches: 90,
       functions: 95,
