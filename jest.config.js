@@ -1,16 +1,17 @@
-// const { createDefaultPreset } = require("ts-jest");
-
-// const tsJestTransformCfg = createDefaultPreset().transform;
-
-// /** @type {import("jest").Config} **/
-// module.exports = {
-//   testEnvironment: "node",
-//   coverageThreshold: {
-//     global: {
-//       lines: 90,
-//       branches: 90,
-//       functions: 90,
-//       statements: 90,
-//     },
-//   }
-// }
+ module.exports = {
+  preset: "ts-jest",
+  testEnvironment: "node",
+  roots: ["<rootDir>/tests"],
+  collectCoverageFrom: ["src/**/*.ts"],
+  collectCoverage: true,
+  coverageDirectory: '<rootDir>/coverage',
+  coverageReporters: ['text', 'lcov'],
+  coverageThreshold: {
+    global: {
+      branches: 90,
+      functions: 90,
+      lines: 90,
+      statements: 90
+    }
+  }
+};
