@@ -18,7 +18,7 @@
     "url": "https://github.com/shaik-mahammad-rafi01/expression-calculator-app/issues"
   },
   "homepage": "https://github.com/shaik-mahammad-rafi01/expression-calculator-app#readme",
-  "description": "",
+  "description": "This is a simple calculator built with Typescript that evaluates mathematical expressions using mathjs library.It takes a math expression as a string and returns the calculated result.",
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
@@ -30,5 +30,8 @@
   "dependencies": {
     "mathjs": "^14.6.0",
     "prompt-sync": "^4.2.0"
+  },
+  "directories": {
+    "test": "tests"
   }
 }

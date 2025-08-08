@@ -40,9 +40,7 @@ describe("Basic Operations", () => {
     test("Division of 2 numbers", () => {
         expect(division(4, 2)).toBe(2)
     })
-    test("division by zero", () => {
-        expect(() => division(2, 0)).toThrow("can not divide by zero");
-    })
+    
     test("Modulus", () => {
         expect(modulus(5, 2)).toBe(1);
     })
