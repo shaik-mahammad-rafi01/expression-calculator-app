@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/src/app.js",
-    "dev": "tsc",
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
@@ -24,8 +24,8 @@
     "@types/node": "^24.1.0",
     "@types/prompt-sync": "^4.2.3",
     "jest": "^30.0.5",
-    "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3"
+    "ts-jest": "^29.4.1",
+    "typescript": "^5.9.2"
   },
   "dependencies": {
     "mathjs": "^14.6.0",
