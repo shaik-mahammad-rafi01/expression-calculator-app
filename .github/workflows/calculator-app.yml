@@ -1,0 +1,10 @@
+name: Calculator-app CI/CD
+
+on: push
+
+jobs:
+  BuildCode-Test-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+        - name: check-out repo
+          uses: actions/checkout@v4
