@@ -34,14 +34,14 @@ pipeline{
     post{
       success{
         mail to: 'rafi.shaik@everest.engineering',
-        subject: "Pipeline is run success -${currentBuild.fullDisplayName}",
-        body: "Pipeline run successfully - ${env.BUILD_URL}"
+        subject: "Pipeline is run success",
+        body: "Pipeline run successfully"
       }
 
       failure{
-          mail to : 'rafi.shaik@everest.engineering',
-          subject : "Pipeline is failed - ${currentBuild.fullDisplayName}",
-          body : "Something incorrect in pipeline - ${env.BUILD_URL}"
+        mail to : 'rafi.shaik@everest.engineering',
+        subject : "Pipeline is failed - ${currentBuild.fullDisplayName}",
+        body : "Something incorrect in pipeline - ${env.BUILD_URL}"
       }
     }
 }
