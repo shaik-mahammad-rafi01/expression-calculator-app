@@ -33,9 +33,9 @@ pipeline{
     }
     post{
       success{
-        mail to: 'rafi.shaik@everest.engineering',
-        subject: "Pipeline is run success",
-        body: "Pipeline run successfully"
+        mail to : 'rafi.shaik@everest.engineering',
+        subject : "Pipeline is run success",
+        body : "Pipeline run successfully"
       }
 
       failure{
