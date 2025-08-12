@@ -32,10 +32,16 @@ pipeline{
 
     }
     post{
-        failure{
-            mail to : 'rafi.shaik@everest.engineering',
-            subject : "Pipeline is failed - ${currentBuild.fullDisplayName}",
-            body : "Something incorrect in pipeline - ${env.BUILD_URL}"
-        }
+      success{
+        mail to: 'rafi.shaik@everest.engineering',
+        subject: "Pipeline is run success -${currentBuild.fullDisplayName}",
+        body: "Pipeline run successfully - ${env.BUILD_URL}"
+      }
+
+      failure{
+          mail to : 'rafi.shaik@everest.engineering',
+          subject : "Pipeline is failed - ${currentBuild.fullDisplayName}",
+          body : "Something incorrect in pipeline - ${env.BUILD_URL}"
+      }
     }
 }
