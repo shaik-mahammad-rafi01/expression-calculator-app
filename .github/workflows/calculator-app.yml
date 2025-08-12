@@ -4,7 +4,7 @@ on: push
 
 jobs:
   BuildCode-Test-Deploy:
-    runs-on: ubuntu-latest
+    runs-on: masos-latest
     steps:
         - name: check-out repo
           uses: actions/checkout@v4
