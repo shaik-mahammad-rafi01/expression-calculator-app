@@ -1,9 +1,12 @@
 name: Calculator-app CI/CD
 
-on: push
+on:
+  push:
+    branches: ["main"]
 
 jobs:
-  BuildCode-Test-Deploy:
+  job1:
+    name: CI-Job
     runs-on: macos-latest
     steps:
         - name: check-out repo
@@ -23,5 +26,10 @@ jobs:
         - name: Test
           run: npm test
 
-        - name: Deploy
-          run: echo "Deploy Success"
+  job2:
+    name: CD-Job
+    runs-on: macos-latest
+    needs: [job1]
+    steps:
+        - name: Deploy project
+          run: echo "Project deployed success"
