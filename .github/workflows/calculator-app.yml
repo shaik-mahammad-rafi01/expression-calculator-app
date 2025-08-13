@@ -22,12 +22,15 @@ jobs:
 
         - name: Run eslint
           run: npm run lint
-          
+
         - name: Build Project
           run: npm run build
 
         - name: Test
           run: npm test
+
+        - name: Code coverage
+          run: npx jest --coverage
 
   job2:
     name: CD-Job
