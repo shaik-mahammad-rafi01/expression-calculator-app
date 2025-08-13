@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node dist/src/app.js",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "lint" : "eslint ."
   },
   "repository": {
     "type": "git",
@@ -20,12 +21,17 @@
   "homepage": "https://github.com/shaik-mahammad-rafi01/expression-calculator-app#readme",
   "description": "This is a simple calculator built with Typescript that evaluates mathematical expressions using mathjs library.It takes a math expression as a string and returns the calculated result.",
   "devDependencies": {
+    "@eslint/js": "^9.33.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
     "@types/prompt-sync": "^4.2.3",
+    "eslint": "^9.33.0",
+    "globals": "^16.3.0",
     "jest": "^30.0.5",
+    "jiti": "^2.5.1",
     "ts-jest": "^29.4.1",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.1"
   },
   "dependencies": {
     "mathjs": "^14.6.0",

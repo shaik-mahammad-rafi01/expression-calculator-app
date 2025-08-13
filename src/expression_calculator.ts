@@ -46,6 +46,7 @@ export function mathExpressionCalculator(expression: string): number {
 
         return result;
         
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
         throw new Error("Invalid expression");
     }
