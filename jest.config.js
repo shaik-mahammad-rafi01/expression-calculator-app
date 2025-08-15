@@ -9,7 +9,7 @@ export const coverageThreshold = {
   global: {
     branches: 91,
     functions: 90,
-    lines: 90,
+    lines: 91,
     statements: 90,
   },
 };
