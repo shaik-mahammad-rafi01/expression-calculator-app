@@ -8,7 +8,7 @@ export const transform = {
 export const coverageThreshold = {
   global: {
     branches: 91,
-    functions: 90,
+    functions: 91,
     lines: 91,
     statements: 90,
   },
